@@ -25,9 +25,9 @@ const thisYear = new Date().getFullYear();
 <template>
     <div class="w-full min-h-[100dvh] flex flex-col items-center justify-center">
         <Logo class="flex z-10 w-full min-h-20 max-w-[250px] lg:max-w-[350px]" type="logo" color="black" />
-        <div class="flex flex-col max-w-2xl text-black/50 mt-6 items-center">
+        <div class="flex flex-col max-w-2xl text-black/50 mt-6 items-center text-sm lg:text-base">
             <!-- Logo y título principal -->
-            <h1 class="max-w-xl text-sm lg:text-base text-center text-balance mb-2">
+            <h1 class="max-w-xl text-center text-balance mb-2">
                 A space to share and learn by creating software and digital products, without rules or much planning. Here ideas take shape
                 from zero.
             </h1>
