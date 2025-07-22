@@ -1,0 +1,80 @@
+.theme_deep-red .composition_classy {
+    --credits-bg-color: transparent;
+    --credits-text-color: #ffffff;
+
+    --box-gradient-color: linear-gradient(180deg, transparent 30%, #101428 90%, #101428 100%);
+
+    --title-font-family: 'Space Grotesk', sans-serif;
+    --title-font-size: 11cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 700;
+    --title-line-height: 1em;
+    --title-color: #dddddd;
+    --title-transform: uppercase;
+    --title-letter-spacing: 0.1em;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-line-height: 1.2em;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-line-color: #dddddd;
+    --subtitle-lines-height: 0cqw;
+    --subtitle-color: #dddddd;
+    --subtitle-margin-top: 2%;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #dddddd;
+    --coos-margin-top: 2%;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 600;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #dddddd;
+}
+
+.theme_deep-red .composition_pantone {
+    --credits-bg-color: #101428;
+    --credits-text-color: #ffffff;
+
+    --box-gradient-color: #101428;
+    --box-line-color: #101428;
+
+    --title-font-family: 'Space Grotesk', sans-serif;
+    --title-font-size: 8cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 400;
+    --title-line-height: 1em;
+    --title-letter-spacing: 0em;
+    --title-color: #ffffff;
+    --title-transform: uppercase;
+    --title-letter-spacing: 0.1em;
+    --title-padding: 0 0 2% 0;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-lines-height: 1em;
+    --subtitle-color: #ffffff;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #ffffff;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #ffffff;
+}

@@ -1,0 +1,86 @@
+.theme_minimal .composition_classy {
+    --credits-bg-color: #ffffff;
+    --credits-text-color: #000;
+
+    --box-gradient-color: linear-gradient(180deg, transparent 30%, #ffffff 90%, #ffffff 100%);
+
+    --title-font-family: 'Playfair Display', serif;
+    --title-font-size: 16cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 700;
+    --title-line-height: 1em;
+    --title-color: #000;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-line-height: 1.2em;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-line-color: #000;
+    --subtitle-lines-height: 0.2cqw;
+    --subtitle-color: #000;
+    --subtitle-margin-top: 3%;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #000;
+    --coos-margin-top: 2%;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #000;
+}
+
+.theme_minimal .composition_classy .text-box .title span::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-text-stroke-width: 0.06em;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.theme_minimal .composition_pantone {
+    --credits-bg-color: #212121;
+    --credits-text-color: #ffffff;
+
+    --box-gradient-color: #ffffff;
+    --box-line-color: #000000;
+
+    --title-font-family: 'Playfair';
+    --title-font-size: 12cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 700;
+    --title-line-height: 1em;
+    --title-letter-spacing: 0em;
+    --title-color: #000000;
+    --title-padding: 0 0 1% 0;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-weight: 700;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-lines-height: 1em;
+    --subtitle-color: #000;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #000;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #000;
+}

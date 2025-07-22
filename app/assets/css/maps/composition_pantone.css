@@ -1,0 +1,179 @@
+:root {
+    --box-gradient-color: #fff;
+    --box-line-color: #000;
+
+    --title-font-family: 'Playfair Display';
+    --title-font-size: 10cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 700;
+    --title-line-height: 1em;
+    --title-letter-spacing: 0em;
+    --title-color: #000;
+    --title-padding: 0 0 4% 0;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 2cqw;
+    --subtitle-font-size-lanscape: 1cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-line-color: #000;
+    --subtitle-color: #000;
+    --subtitle-line-height: 1em;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #000;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #000;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./../fonts/OpenSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.composition_pantone .text-box {
+    position: absolute;
+    z-index: 1;
+    inset: auto 0cm 0cm 0cm;
+    background: var(--box-gradient-color);
+    padding: 5%;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.15em solid var(--box-line-color);
+}
+
+.composition_pantone .square .text-box .bottomSpace {
+    height: 0.5em;
+}
+
+.composition_pantone .text-box .title {
+    width: 90%;
+    display: flex;
+    text-align: left;
+    text-overflow: ellipsis;
+    padding: var(--title-padding);
+}
+
+.composition_pantone .text-box .title span {
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+    letter-spacing: var(--title-letter-spacing);
+    color: var(--title-color);
+    overflow-wrap: anywhere;
+    text-transform: var(--title-transform);
+    letter-spacing: var(--title-letter-spacing);
+}
+
+.composition_pantone .text-box .subtitle {
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.composition_pantone .text-box .subtitle span {
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--subtitle-font-weight);
+    line-height: var(--subtitle-line-height);
+    letter-spacing: var(--subtitle-letter-spacing);
+    color: var(--subtitle-color);
+    text-transform: uppercase;
+}
+
+.composition_pantone .text-box .second-area {
+    display: flex;
+    width: 100%;
+    padding: 0.5%;
+}
+
+.composition_pantone .text-box .second-area .info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.composition_pantone .text-box .coos {
+    width: 100%;
+    display: flex;
+    margin-top: 1.5%;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.composition_pantone .text-box .coos span {
+    font-family: var(--coos-font-family);
+    font-size: var(--coos-font-size);
+    font-weight: var(--coos-font-weight);
+    line-height: var(--coos-line-height);
+    letter-spacing: var(--coos-letter-spacing);
+    color: var(--coos-color);
+    text-transform: uppercase;
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.composition_pantone .text-box .address {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 0.5%;
+    overflow: hidden;
+}
+
+.composition_pantone .text-box .address span {
+    font-family: var(--address-font-family);
+    font-size: var(--address-font-size);
+    font-weight: var(--address-font-weight);
+    line-height: var(--address-line-height);
+    letter-spacing: var(--address-letter-spacing);
+    text-transform: uppercase;
+    color: var(--address-color);
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.safe-area {
+    display: none;
+}
+
+/* .safe-area > .inside {
+    width: 100%;
+    height: 100%;
+    border: 0.1cm solid #000;
+}
+
+.safe-area > .inside > .inside {
+    display: none;
+} */
+
+/* LANDSCAPE */
+
+.composition_pantone.landscape .text-box {
+    padding: 2% 3%;
+}
+
+.composition_pantone.landscape .text-box .title span {
+    font-size: var(--title-font-size-landascape);
+}
+
+.composition_pantone.landscape .text-box .subtitle span {
+    font-size: var(--subtitle-font-size-lanscape);
+}

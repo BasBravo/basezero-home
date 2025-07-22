@@ -1,0 +1,106 @@
+.theme_dark .composition_classy {
+    --credits-bg-color: transparent;
+    --credits-text-color: #eeeeee;
+
+    --box-gradient-color: linear-gradient(180deg, transparent 10%, #000000 90%, #000000 100%);
+    --box-text-color: #eeeeee;
+
+    --title-font-family: 'Big Shoulders Inline Display', serif;
+    --title-font-size: 14cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 200;
+    --title-line-height: 1.2em;
+    --title-color: #d19213;
+    --title-transform: uppercase;
+    --title-letter-spacing: 0.1em;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-line-height: 1.2em;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-line-color: #eeeeee;
+    --subtitle-lines-height: 0.2cqw;
+    --subtitle-color: #eeeeee;
+    --subtitle-margin-top: 1%;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #eeeeee;
+    --coos-margin-top: 2%;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #eeeeee;
+}
+
+.theme_dark .composition_pantone {
+    --credits-bg-color: transparent;
+    --credits-text-color: #eeeeee;
+
+    --box-gradient-color: #000000;
+    --box-line-color: #87621a;
+
+    --title-font-family: 'Big Shoulders Inline Display', serif;
+    --title-font-size: 10cqw;
+    --title-font-size-landascape: 6cqw;
+    --title-font-weight: 200;
+    --title-line-height: 1em;
+    --title-letter-spacing: 0.1em;
+    --title-color: #d19213;
+    --title-transform: uppercase;
+    --title-padding: 0 0 1% 0;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 1.5cqw;
+    --subtitle-font-size-lanscape: 1cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-lines-height: 1em;
+    --subtitle-color: #eeeeee;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #eeeeee;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #eeeeee;
+}
+
+.theme_dark .composition_classy .title span {
+    text-transform: uppercase;
+}
+
+.theme_dark .composition_pantone .title span {
+    text-transform: uppercase;
+}
+
+.theme_dark .composition_classy .safe-area {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 1) 100%);
+    pointer-events: none;
+}
+
+.theme_dark .composition_classy #composition,
+.theme_dark .composition_pantone #composition {
+    z-index: 2 !important;
+}

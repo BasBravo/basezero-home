@@ -1,0 +1,20 @@
+/* Page transitions */
+.page-enter-active {
+    transition: opacity 0.15s ease;
+}
+
+.page-leave-active {
+    transition: opacity 0.15s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.page-enter-from {
+    opacity: 0;
+}
+
+.page-leave-to {
+    opacity: 0;
+}

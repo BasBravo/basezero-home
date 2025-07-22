@@ -1,0 +1,197 @@
+:root {
+    --box-gradient-color: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%);
+    --box-text-color: #000;
+    --box-padding: 40% 2% 6% 2%;
+
+    --title-font-family: 'Playfair';
+    --title-font-size: 14cqw;
+    --title-font-size-landascape: 10cqw;
+    --title-font-weight: 700;
+    --title-line-height: 1.2em;
+    --title-letter-spacing: 0em;
+    --title-color: #000;
+    --title-transform: none;
+    --title-letter-spacing: 0em;
+
+    --subtitle-font-family: 'Open Sans';
+    --subtitle-font-size: 2cqw;
+    --subtitle-font-weight: 400;
+    --subtitle-letter-spacing: 0.1em;
+    --subtitle-line-height: 0.1em;
+    --subtitle-line-color: #000;
+    --subtitle-margin-top: 4%;
+    --subtitle-color: #000;
+    --subtitle-lines-height: 0.1em;
+
+    --coos-font-family: 'Open Sans';
+    --coos-font-size: 1.5cqw;
+    --coos-font-weight: 400;
+    --coos-line-height: 1.2em;
+    --coos-letter-spacing: 0.1em;
+    --coos-color: #000;
+    --coos-margin-top: 4%;
+
+    --address-font-family: 'Open Sans';
+    --address-font-size: 1cqw;
+    --address-font-weight: 400;
+    --address-line-height: 1.2em;
+    --address-letter-spacing: 0.1em;
+    --address-color: #000;
+}
+
+.composition_classy .text-box {
+    position: absolute;
+    z-index: 1;
+    inset: auto 0cm 0cm 0cm;
+    color: var(--box-text-color);
+    background: var(--box-gradient-color);
+    padding: var(--box-padding);
+    container-type: inline-size;
+}
+
+.composition_classy .text-box .bottomSpace {
+    width: 100%;
+    padding: 3%;
+}
+
+.composition_classy .square .text-box .bottomSpace {
+    height: 0.5em;
+}
+
+.composition_classy .text-box .title {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    text-overflow: ellipsis;
+    padding-bottom: 1%;
+}
+
+.composition_classy .text-box .title span {
+    position: relative;
+    margin: auto;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+    letter-spacing: var(--title-letter-spacing);
+    color: var(--title-color);
+    overflow-wrap: anywhere;
+    text-transform: var(--title-transform);
+    letter-spacing: var(--title-letter-spacing);
+}
+
+.composition_classy .text-box .subtitle {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: var(--subtitle-margin-top);
+}
+
+.composition_classy .text-box .subtitle::before {
+    content: '';
+    display: inline-flex;
+    width: 100%;
+    max-width: 5%;
+    height: var(--subtitle-lines-height);
+    margin: auto 3%;
+    background-color: var(--subtitle-line-color);
+}
+
+.composition_classy .text-box .subtitle::after {
+    content: '';
+    display: inline-flex;
+    width: 100%;
+    max-width: 5%;
+    height: var(--subtitle-lines-height);
+    margin: auto 3%;
+    background-color: var(--subtitle-line-color);
+}
+
+.composition_classy .text-box .subtitle span {
+    width: auto;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--subtitle-font-weight);
+    line-height: var(--subtitle-line-height);
+    letter-spacing: var(--subtitle-letter-spacing);
+    color: var(--subtitle-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.composition_classy .text-box .coos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--coos-margin-top);
+}
+
+.composition_classy .text-box .coos span {
+    width: auto;
+    font-family: var(--coos-font-family);
+    font-size: var(--coos-font-size);
+    font-weight: var(--coos-font-weight);
+    line-height: var(--coos-line-height);
+    letter-spacing: var(--coos-letter-spacing);
+    color: var(--coos-color);
+    text-transform: uppercase;
+}
+
+.composition_classy .text-box .address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+}
+
+.composition_classy .text-box .address span {
+    width: auto;
+    font-family: var(--address-font-family);
+    font-size: var(--address-font-size);
+    font-weight: var(--address-font-weight);
+    line-height: var(--address-line-height);
+    letter-spacing: var(--address-letter-spacing);
+    color: var(--address-color);
+    text-transform: uppercase;
+}
+
+.safe-area {
+    display: none;
+}
+
+/* LANDSCAPE */
+
+.composition_classy.landscape .text-box {
+    padding: 20% 2% 5% 2%;
+}
+.composition_classy.landscape .text-box .title span {
+    font-size: var(--title-font-size-landascape);
+}
+
+/* .safe-area > .inside {
+    width: 100%;
+    height: 100%;
+    border: 0.1cm solid #000;
+} */
+
+/* 
+.safe-area > .inside {
+    width: 100%;
+    height: 100%;
+    border: 0.4cm solid #fff;
+}
+
+.safe-area > .inside > .inside {
+    width: 100%;
+    height: 100%;
+    border: 0.1cm solid #000;
+    padding: 0.2cm;
+}
+
+.safe-area > .inside > .inside > .inside {
+    width: 100%;
+    height: 100%;
+    border: 0.3cm solid #000;
+} */
