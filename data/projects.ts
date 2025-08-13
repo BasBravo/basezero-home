@@ -8,6 +8,14 @@ export const projects = [
         status: 'active',
     },
     {
+        id: 'markbase',
+        name: 'Markbase',
+        description: 'Simple & beautiful documentation',
+        logo: '/projects/markbase/logo-dark.svg',
+        url: 'https://markbase.dev/',
+        status: 'active',
+    },
+    {
         id: 'suli',
         name: 'Suli',
         description: 'Suli',

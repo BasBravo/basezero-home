@@ -41,7 +41,7 @@ const thisYear = new Date().getFullYear();
             </div>
         </div>
         <!-- Grid de proyectos -->
-        <div class="max-w-2xl grid grid-cols-2 md:grid-cols-4 gap-10 mx-auto w-fit p-10 mt-10">
+        <div class="max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-10 mx-auto w-fit p-10 mt-10">
             <template v-for="project in projects" :key="project.id">
                 <!-- Proyecto normal -->
                 <a
