@@ -16,6 +16,14 @@ export const projects = [
         status: 'active',
     },
     {
+        id: 'mergeo',
+        name: 'Mergeo',
+        description: 'Visual GitHub portfolios for developers.',
+        logo: '/projects/mergeo/logo.svg',
+        url: 'https://mergeo.dev/',
+        status: 'active',
+    },
+    {
         id: 'suli',
         name: 'Suli',
         description: 'Suli',
